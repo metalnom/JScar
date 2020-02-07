@@ -1,5 +1,6 @@
 # Hashes of file build rules.
-f284477a97419cc3049ede4068a95733 /home/jjs/git/JScar/devel/include/astra_camera/AstraConfig.h
+64fc8853a9a87c9f056c7f28abde4398 /home/jjs/git/JScar/devel/include/Controller/RCdata.h
+6ff3d49244fbb04c26c5bf64bb5cbf7f /home/jjs/git/JScar/devel/include/astra_camera/AstraConfig.h
 45f704e311ddac53e700557aa3e20b6d /home/jjs/git/JScar/devel/include/astra_camera/GetCameraInfo.h
 8898e62f016a0015d069f6ae710dc9e5 /home/jjs/git/JScar/devel/include/astra_camera/GetDeviceType.h
 0e01443f4c926fc69d072cc9c33cc4b1 /home/jjs/git/JScar/devel/include/astra_camera/GetIRExposure.h
@@ -19,7 +20,9 @@ ce8bcb306773ceafef059c17bb9b2b35 /home/jjs/git/JScar/devel/include/astra_camera/
 97c552255ffb73d2285901210e42daa9 /home/jjs/git/JScar/devel/include/astra_camera/SetUVCGain.h
 37f40e6eac1c13f65f7eac66e795305f /home/jjs/git/JScar/devel/include/astra_camera/SetUVCWhiteBalance.h
 180aee12736e7d54b3faf42d7963e596 /home/jjs/git/JScar/devel/include/astra_camera/SwitchIRCamera.h
-a72a571321965493b9c313527dba7c90 /home/jjs/git/JScar/devel/include/astra_camera/UVCCameraConfig.h
+3f6d2e2fd3200c3db30b2384442efa8f /home/jjs/git/JScar/devel/include/astra_camera/UVCCameraConfig.h
+f08c64b31e5e57f1e5f280c175fa2aba /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/Controller/msg/_RCdata.py
+6499c3ee8618fe5bfac1d0815c615af3 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/Controller/msg/__init__.py
 e25fe9c940ebbd608fa9d570a7bdc707 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetCameraInfo.py
 7df231636c6ace4c9d3f2b6633ff0b37 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetDeviceType.py
 d5bcd9240e91a2e6b09bca6d02320db8 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/_GetIRExposure.py
@@ -40,6 +43,7 @@ b0e8d46348f7da37669db7e2f9a8ac9a /home/jjs/git/JScar/devel/lib/python2.7/dist-pa
 9dc6f9bbaf51ce0b6bf6008b69cd1d75 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/_SetUVCWhiteBalance.py
 7b5d3da584fdc25da04c0c7f23016397 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/_SwitchIRCamera.py
 f2222fa4166e8b21aaedce497b9ae123 /home/jjs/git/JScar/devel/lib/python2.7/dist-packages/astra_camera/srv/__init__.py
+1e87b2a056f4c0e7389771370785d72d /home/jjs/git/JScar/devel/share/common-lisp/ros/Controller/msg/RCdata.lisp
 dd504b785027274377867f11d640d17f /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/GetCameraInfo.lisp
 703a098fb6e8a2c3df80e9ad0b51a85d /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/GetDeviceType.lisp
 5ba68275992532b4b750d8af958ee13d /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/GetIRExposure.lisp
@@ -59,6 +63,7 @@ f0dec2cc5bf949e5376011b0eb6491e0 /home/jjs/git/JScar/devel/share/common-lisp/ros
 36dd2d9daa9ca028fad1b2012f4cf2c1 /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/SetUVCGain.lisp
 74e9a0c584379b77a2d1e3bfcd71a4a4 /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/SetUVCWhiteBalance.lisp
 5744ccc015cf3d3c703a88d17d15b3d3 /home/jjs/git/JScar/devel/share/common-lisp/ros/astra_camera/srv/SwitchIRCamera.lisp
+909b2cc146ae24ae71751568360da91e /home/jjs/git/JScar/devel/share/gennodejs/ros/Controller/msg/RCdata.js
 964410278f878d510919ed8dc5ef5223 /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/GetCameraInfo.js
 33df8072f941bfb441f19bb89950c0b4 /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/GetDeviceType.js
 884526956097ec4231e10baca0b17b5f /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/GetIRExposure.js
@@ -78,6 +83,8 @@ f087f4c999c34b14cbfbd52711de3bc9 /home/jjs/git/JScar/devel/share/gennodejs/ros/a
 2e0f03c5d85023e3e2d7c9701a6d2a25 /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/SetUVCGain.js
 024fe59f26b3edabed8c8132a280fbb1 /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/SetUVCWhiteBalance.js
 8235e2f98596250a51193c2811dcf214 /home/jjs/git/JScar/devel/share/gennodejs/ros/astra_camera/srv/SwitchIRCamera.js
+d5a34f165c8584b761fa75573a947bdf /home/jjs/git/JScar/devel/share/roseus/ros/Controller/manifest.l
+7735bcd096d4226d20841e9c3c38c3e2 /home/jjs/git/JScar/devel/share/roseus/ros/Controller/msg/RCdata.l
 e660cae6a5e7be71247836e471ebec80 /home/jjs/git/JScar/devel/share/roseus/ros/astra_camera/manifest.l
 bc28e48457837655e1b1efedcb4487ab /home/jjs/git/JScar/devel/share/roseus/ros/astra_camera/srv/GetCameraInfo.l
 23b3e3b83958d0dc2677802d00d88777 /home/jjs/git/JScar/devel/share/roseus/ros/astra_camera/srv/GetDeviceType.l
@@ -99,6 +106,12 @@ bf2b5435c18fe3438940672bc7138926 /home/jjs/git/JScar/devel/share/roseus/ros/astr
 ee20de099339a85c1f4fb66d606c9729 /home/jjs/git/JScar/devel/share/roseus/ros/astra_camera/srv/SetUVCWhiteBalance.l
 8f4be5454d4ba36985e61bd3f4bc7395 /home/jjs/git/JScar/devel/share/roseus/ros/astra_camera/srv/SwitchIRCamera.l
 b40c603e5fd944f7999b0096a04e891c CMakeFiles/clean_test_results
+92c2ac7095b1cbda669a43abc8809eda Controller/CMakeFiles/Controller_generate_messages_cpp
+92c2ac7095b1cbda669a43abc8809eda Controller/CMakeFiles/Controller_generate_messages_eus
+92c2ac7095b1cbda669a43abc8809eda Controller/CMakeFiles/Controller_generate_messages_lisp
+92c2ac7095b1cbda669a43abc8809eda Controller/CMakeFiles/Controller_generate_messages_nodejs
+92c2ac7095b1cbda669a43abc8809eda Controller/CMakeFiles/Controller_generate_messages_py
+79458da4bf9cb6b48a936b7313870022 Controller/CMakeFiles/_Controller_generate_messages_check_deps_RCdata
 428745d2e6afd621af5da78e0de4563e Vision/ros_astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetCameraInfo
 6f1363f8c5c4e56330b1481958570f75 Vision/ros_astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetDeviceType
 31388fedf198427f650cf41b6a000e24 Vision/ros_astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetIRExposure
