@@ -311,6 +311,12 @@ Project_SOURCE_DIR:STATIC=/home/jjs/git/JScar/src
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/librt.so
 
+//Value Computed by CMake
+Record_data_BINARY_DIR:STATIC=/home/jjs/git/JScar/build/Record_data
+
+//Value Computed by CMake
+Record_data_SOURCE_DIR:STATIC=/home/jjs/git/JScar/src/Record_data
+
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
@@ -648,7 +654,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

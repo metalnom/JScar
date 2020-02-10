@@ -38,7 +38,7 @@ while True:
     msg.record = REC
     
     # print("str: {}, thr: {}, LR: {}, REC: {}".format(dict['str'], dict['thr'], dict['LR'], dict['REC']))
-    #print("str: {}, thr: {}, LR: {}, REC: {}".format(msg.steering, msg.throttle, msg.sidemove, msg.record))
+    # print("str: {}, thr: {}, LR: {}, REC: {}".format(msg.steering, msg.throttle, msg.sidemove, msg.record))
     pub.publish(msg)
     # rate.sleep()
 

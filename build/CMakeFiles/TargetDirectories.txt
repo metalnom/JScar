@@ -35,6 +35,14 @@
 /home/jjs/git/JScar/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/jjs/git/JScar/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/jjs/git/JScar/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/install/strip.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/install/local.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/test.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/list_install_components.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/edit_cache.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/_catkin_empty_exported_target.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/rebuild_cache.dir
+/home/jjs/git/JScar/build/Record_data/CMakeFiles/install.dir
 /home/jjs/git/JScar/build/Controller/CMakeFiles/install/strip.dir
 /home/jjs/git/JScar/build/Controller/CMakeFiles/install/local.dir
 /home/jjs/git/JScar/build/Controller/CMakeFiles/list_install_components.dir

@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/jjs/git/JScar/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/jjs/git/JScar/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/jjs/git/JScar/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/jjs/git/JScar/build"
+export PYTHONPATH="/home/jjs/git/JScar/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH="/home/jjs/git/JScar/src:$ROS_PACKAGE_PATH"

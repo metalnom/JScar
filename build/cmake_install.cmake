@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jjs/git/JScar/build/gtest/cmake_install.cmake")
+  include("/home/jjs/git/JScar/build/Record_data/cmake_install.cmake")
   include("/home/jjs/git/JScar/build/Controller/cmake_install.cmake")
   include("/home/jjs/git/JScar/build/Vision/ros_astra_camera/cmake_install.cmake")
 
