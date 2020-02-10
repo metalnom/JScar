@@ -8,15 +8,20 @@ import subprocess
 import os 
 import signal
 from Controller.msg import RCdata
+import Jetson.GPIO as gpio
+
+
 
 DEFAULT_LOCATION = "/home/jjs/git/JScar/bag/"
 
 def callback(rc):
     global recording, start_rosbag
+
     if rc.record == 1 and recording is False:
         recording = True
         start_rosbag = subprocess.Popen('roslaunch Record_data recorder.launch', stdin=subprocess.PIPE, shell=True)
         print("\n\nRosbag Recorder started...")
+        gpio.output(18, 1)
     # else:
     #     print("\nRecorder has been activated already..\n")
 
@@ -24,6 +29,7 @@ def callback(rc):
         recording = False
         terminate_process_and_children(start_rosbag)
         print("\n\nRosbag Recorder stopped...")
+        gpio.output(18, 0)
 
     # else:
 	#     print("\nRecorder is not activated yet...Press A to start record")
@@ -47,5 +53,8 @@ def start():
 
 if __name__ == "__main__":
    recording = False
+   gpio.setmode(gpio.BOARD)
+   gpio.setup(18, gpio.OUT)
+   gpio.output(18, 0)
    start()
 
