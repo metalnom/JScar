@@ -8,7 +8,7 @@ mkit = MotorKit()
 skit = ServoKit(channels=16)
 
 def rc_callback(rc):
-    print(round(rc.sidemove,2))
+    print("STR: {}, THR: {}, LR:, {}, REC: {}".format(int(rc.steering), round(rc.throttle, 2), round(rc.sidemove, 2), rc.record))
     skit.servo[0].angle = int(rc.steering)
     mkit.motor1.throttle = round(rc.throttle, 2)
     mkit.motor2.throttle = round(rc.throttle, 2)

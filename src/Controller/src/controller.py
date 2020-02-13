@@ -12,6 +12,7 @@ pub = rospy.Publisher('RCrecv', RCdata, queue_size=1)
 ser = Serial("/dev/ttyACM0", 115200, timeout=1)
 for i in range(1, 20):
     data = ser.readline().decode('utf-8').rstrip('\n\r')
+    print("Serial COM initialize : {}".format(i))
 
 while True:
     data = ser.readline().decode('utf-8').rstrip('\n\r')
