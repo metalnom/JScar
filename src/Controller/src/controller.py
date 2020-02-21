@@ -21,25 +21,29 @@ while True:
     except Exception as e:
         pass
     STR = (float(dict['str']-1250)/500*120 + float(30))
+    STR = (float(90-STR))/float(60)
     THR = (float(dict['thr']-1500)/500)
-    LR = (float(dict['LR']-1500)/500)
+    # LR = (float(dict['LR']-1500)/500)
     REC = int(dict['REC'])
+
+    if STR > 1: STR = 1
+    if STR < -1: STR = -1
 
     if THR > 1: THR = 1
     if THR < -1: THR = -1
 
-    if LR > 1: LR = 1
-    if LR < -1: LR = -1
+    # if LR > 1: LR = 1
+    # if LR < -1: LR = -1
 
     msg = RCdata(0.0, 0.0, 0.0, 0)
     
     msg.steering = STR
     msg.throttle = THR
-    msg.sidemove = LR
+    # msg.sidemove = LR
     msg.record = REC
     
     # print("str: {}, thr: {}, LR: {}, REC: {}".format(dict['str'], dict['thr'], dict['LR'], dict['REC']))
-    # print("str: {}, thr: {}, LR: {}, REC: {}".format(msg.steering, msg.throttle, msg.sidemove, msg.record))
+    print("str: {}, thr: {}, REC: {}".format(msg.steering, msg.throttle, msg.record))
     pub.publish(msg)
     # rate.sleep()
 

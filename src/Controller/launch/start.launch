@@ -1,7 +1,7 @@
 <launch>
 
  <!-- Set Parameter Sever -->
- <!-- <rosparam  file="$(find Controller)/cfg/paths.yaml" command="load"/> -->
+ <rosparam  file="$(find Controller)/cfg/paths.yaml" command="load"/>
 
  <!-- Joy node -->
   <node respawn="true" pkg="joy" type="joy_node" name="jetson_joy" >
@@ -13,8 +13,8 @@
   <node pkg="Record_data" name="recorder" type="recorder_start.py" output="screen"> 
   </node>
 
- <!-- Pilot Node
-  <node pkg="controller" name="autonomous_controller" type="controller.py" output="screen"/> -->
+ <!-- Pilot Node -->
+  <node pkg="Controller" name="autonomous_controller" type="controller.py" output="screen"/>
 
   <!-- Perception Node -->
   <!-- <param name="scale_linear" value="0.5" type="double"/>

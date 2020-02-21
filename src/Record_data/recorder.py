@@ -39,10 +39,10 @@ def camera_callback(camera):
         lock.release()
 
 def car_info_callback(carinfo):
-    global steering, throttle, leftright
+    global steering, throttle
     steering = round(carinfo.steering, 2)
     throttle = round(carinfo.throttle, 2)	
-    leftright = round(carinfo.sidemove, 0)
+#     leftright = round(carinfo.sidemove, 0)
 
 def depth_cam_callback(depth_cam):
     global lock, depth_img, steering, throttle, cv_bridge
@@ -53,7 +53,7 @@ def depth_cam_callback(depth_cam):
 # Shared variables
 steering = 0.0
 throttle = 0.0
-leftright = 0.0
+# leftright = 0.0
 image = None
 depth_img = None
 seq = 1
@@ -69,10 +69,10 @@ depth_cam_listener = rospy.Subscriber("/camera/depth/image_raw", Image, depth_ca
 # Open driving_log file
 if os.path.isfile(DRIVING_LOG_PATH) is True:
 	f = open(DRIVING_LOG_PATH,'ab')
-	driving_log = csv.DictWriter(f, fieldnames=["RGB Image","Depth Image", "Steering Angle", "Throttle", "LeftRight"])
+	driving_log = csv.DictWriter(f, fieldnames=["RGB Image","Depth Image", "Steering Angle", "Throttle"])
 else:
 	f = open(DRIVING_LOG_PATH,'wb')
-	driving_log = csv.DictWriter(f, fieldnames=["RGB Image","Depth Image", "Steering Angle", "Throttle", "LeftRight"])
+	driving_log = csv.DictWriter(f, fieldnames=["RGB Image","Depth Image", "Steering Angle", "Throttle"])
 	driving_log.writeheader()
 
 
@@ -89,10 +89,10 @@ while not rospy.is_shutdown():
     # Create image filename for current frame
     timestamp = rospy.get_rostime()
     # RGB image
-    fname = str(timestamp)+"_"+str(seq) +"_"+str(round(steering, 2)) + "_"+ str(round(throttle, 2)) + "_" + str(round(leftright, 2))
+    fname = str(timestamp)+"_"+str(seq) +"_"+str(round(steering, 2)) + "_"+ str(round(throttle, 2))
     fname = RGB_IMG_PATH+fname+".jpg"
     # Depth Image
-    depth_fname = str(timestamp)+"_"+str(seq) +"_"+str(round(steering, 2)) + "_"+ str(round(throttle, 2)) + "_" + str(round(leftright, 2))
+    depth_fname = str(timestamp)+"_"+str(seq) +"_"+str(round(steering, 2)) + "_"+ str(round(throttle, 2))
     depth_fname = DEPTH_IMG_PATH+depth_fname+".jpg"
     # Write images into disk
     print(fname)
@@ -101,7 +101,7 @@ while not rospy.is_shutdown():
     
     # new csv line
 #    driving_log.writerow({'RGB Image': fname, 'Depth Image': depth_fname, 'Steering Angle': steering,'Throttle': throttle,'Speed': speed})
-    driving_log.writerow({'RGB Image': fname, 'Depth Image': depth_fname, 'Steering Angle': steering,'Throttle': throttle, 'LeftRight': leftright})
+    driving_log.writerow({'RGB Image': fname, 'Depth Image': depth_fname, 'Steering Angle': steering,'Throttle': throttle})
     # publish data to /car_recorder
 #     msg = CarRecorder()
 #     msg.steer = steering

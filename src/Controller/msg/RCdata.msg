@@ -1,4 +1,3 @@
 float32 steering
 float32 throttle
-float32 sidemove
 int32 record
